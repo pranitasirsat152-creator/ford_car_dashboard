@@ -5,7 +5,7 @@ import numpy as np
 
 model = joblib.load("LR model.pkl")
 scaler = joblib.load("Scaler..pkl")
-model_columns = joblib.load("Columns..pkl")
+model = joblib.load("columns..pkl")
 
 st.title("Car Price Prediction App")
 
