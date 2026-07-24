@@ -31,8 +31,8 @@ if st.button("Predict Price"):
     }])
 
     input_encoded = pd.get_dummies(input_data)
-    input_encoded = input_encoded.reindex(columns=model_columns,fill_value=0)
+    input_encoded = input_encoded.reindex(columns = model_columns , fill_value=0)
     input_scaled = scaler.transform(input_encoded)
     prediction = model.predict(input_scaled)
 
-    st.success(f"Predicted Price: £ {prediction[0]:.2f}")
+    st.success("Predicted Price: £ {prediction[0]:.2f}")
