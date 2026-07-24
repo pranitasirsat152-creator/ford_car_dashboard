@@ -31,6 +31,7 @@ if st.button("Predict Price"):
     }])
 
     input_encoded = pd.get_dummies(input_data)
+    model_columns = joblib.load("columns..pkl")  
     input_encoded = input_encoded.reindex(columns = model_columns , fill_value=0)
     input_scaled = scaler.transform(input_encoded)
     prediction = model.predict(input_scaled)
