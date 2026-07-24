@@ -2,7 +2,7 @@
 import streamlit as st
 import pandas as pd
 import joblib
-import numpy as npnp
+import numpy as np
 
 model = joblib.load("LR_model.pkl")
 scaler = joblib.load("scaler.pkl")
