@@ -4,7 +4,7 @@ import pandas as pd
 import joblib
 import numpy as np
 
-model = joblib.load("LR_model(1).pkl")
+model = joblib.load("LR model.pkl")
 scaler = joblib.load("scaler(1).pkl")
 model_columns = joblib.load("columns(1).pkl")
 
